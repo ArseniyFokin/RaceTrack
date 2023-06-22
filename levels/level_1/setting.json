@@ -1,0 +1,13 @@
+{
+    "start": [19, 2],
+    "end": [[21, 1], [23, 4]],
+    "cell_size": 30,
+    "bots": [
+        {
+            "title": "Ally",
+            "color": "black",
+            "strategy": "best_bfs_no_graph",
+            "limit": 5
+        }
+    ]
+}

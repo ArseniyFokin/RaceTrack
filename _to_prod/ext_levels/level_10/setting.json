@@ -1,0 +1,25 @@
+{
+    "start": [8, 28],
+    "end": [[3, 31], [12, 33]],
+    "cell_size": 15,
+    "bots": [
+        {
+            "title": "Jack",
+            "color": "green",
+            "strategy": "best_bfs",
+            "limit": 7
+        },
+        {
+            "title": "Andrew",
+            "color": "red",
+            "strategy": "bfs",
+            "limit": 10
+        },
+        {
+            "title": "George",
+            "color": "blue",
+            "strategy": "bfs_comp",
+            "limit": 5
+        }
+    ]
+}

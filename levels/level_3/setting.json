@@ -1,0 +1,11 @@
+{
+    "start": [14, 5],
+    "end": [[51, 31], [63, 33]],
+    "cell_size": 15,
+    "bots": [
+        {
+            "color": "green",
+            "strategy": "best_bfs_no_graph"
+        }
+    ]
+}
