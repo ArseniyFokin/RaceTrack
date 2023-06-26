@@ -29,6 +29,7 @@ class StrategyBestBFS(StrategyBFSCompare):
         current_node = None
 
         while not queue.empty() and _limit <= self.limit:
+            self.count_check_nodes += 1
             current_node = queue.get()
             current_node=current_node[2]
             if visited.get(current_node) is not None:

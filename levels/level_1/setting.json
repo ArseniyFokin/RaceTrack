@@ -4,10 +4,29 @@
     "cell_size": 30,
     "bots": [
         {
-            "title": "Ally",
+            "title": "BFS",
             "color": "black",
-            "strategy": "best_bfs_no_graph",
-            "limit": 5
+            "strategy": "bfs"
+        },
+        {
+            "title": "BFS_comp",
+            "color": "gray",
+            "strategy": "bfs_comp"
+        },
+        {
+            "title": "Best_BFS",
+            "color": "orange",
+            "strategy": "best_bfs"
+        },
+        {
+            "title": "Monte_Carlo",
+            "color": "blue",
+            "strategy": "monte_carlo"
+        },
+        {
+            "title": "Best_BFS_no_graph",
+            "color": "green",
+            "strategy": "best_bfs_no_graph"
         }
     ]
 }

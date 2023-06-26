@@ -53,6 +53,7 @@ class StrategyBestBFSNoGraph(Strategy):
         node = None
 
         while not queue.empty() and _limit <= self.limit:
+            self.count_check_nodes += 1
             node = queue.get()[2]
             if visited.get(node) is not None:
                 continue

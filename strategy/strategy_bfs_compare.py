@@ -38,6 +38,7 @@ class StrategyBFSCompare(StrategyBFS):
         _limit = 0
 
         while queue and _limit <= self.limit:
+            self.count_check_nodes += 1
             _node = queue.pop(0)
             if visited.get(_node) is not None:
                 continue

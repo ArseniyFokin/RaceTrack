@@ -5,7 +5,7 @@
     "bots": [
         {
             "color": "green",
-            "strategy": "best_bfs_no_graph"
+            "strategy": "bfs"
         }
     ]
 }

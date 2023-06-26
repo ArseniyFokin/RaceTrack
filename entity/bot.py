@@ -83,5 +83,5 @@ class Bot(EntityPoint):
             return None
         # Ставим флажок, если следующая позиция в финишных вершинах
         if _next_node in self.finishes:
-            print(f'finish -> time = {self._time}, nodes = {len(self.history_way)}')
+            print(f'finish -> time = {self._time}, nodes = {len(self.history_way)}, check_nodes = {self.strategy.count_check_nodes}')
             self.is_finish = True

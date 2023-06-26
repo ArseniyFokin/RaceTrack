@@ -10,6 +10,8 @@ class Strategy:
         self.finishes = finishes
         self.limit = limit
 
+        self.count_check_nodes = 0
+
     @staticmethod
     def get_available_moves(current_point: tuple[int, int], prev_point: tuple[int, int]) -> list[tuple]:
         """

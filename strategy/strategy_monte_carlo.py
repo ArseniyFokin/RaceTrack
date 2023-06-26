@@ -42,6 +42,7 @@ class StrategyMonteCarlo(Strategy):
             while _count_points != self.LIMIT_POINTS \
                     and not self.finishes.get(_current_point) \
                     and self.matrix_distance.get(_current_point) is not None:
+                self.count_check_nodes += 1
                 __current_point, __prev_point = \
                     random.choice(self.get_available_moves(_current_point, _prev_point)), _current_point
                 if self.check_available_path(__current_point, __prev_point):

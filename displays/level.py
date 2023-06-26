@@ -77,7 +77,7 @@ class Level:
         self.start = start
         self.finish = finish
         self.cell_display = CellDisplay(self.display, cell_size)
-        # self.players = [Player(self.start, color='red')]
+        self.players = [Player(self.start, color='red')]
         self.moved_player = None
 
         if self.with_draw:
@@ -109,7 +109,8 @@ class Level:
                                          self.cell_display.get_coord_by_cell(self.moved_player.history_way[-2])).get_mask()
                         if self.map_mask.overlap(path_mask, -self.cell_display.origin):
                             self.moved_player.is_alive = False
-                        elif tuple(self.finish[0]) <= tuple(click) <= tuple(self.finish[1]):
+                        elif self.finish[0][0] <= click.x <= self.finish[1][0] \
+                            and self.finish[0][1] <= click.y <= self.finish[1][1]:
                             self.moved_player.is_alive = False
                             self.moved_player.is_finish = True
 
